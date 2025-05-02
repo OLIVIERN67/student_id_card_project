@@ -79,7 +79,7 @@ include "header.php";
 </head>
 <body>
 
-<h1>Welcome to CRAT System - Empowering Your Digital Future</h1>
+<h1>Welcome to CRAT  System - where we Empower Your Digital Future</h1>
 <div class="username">
     Hello, <strong><?php echo htmlspecialchars($_SESSION['username']); ?></strong>!
     
