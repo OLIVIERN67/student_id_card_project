@@ -28,6 +28,7 @@ if ($result->num_rows > 0) {
         echo "<td>" . htmlspecialchars($row["sex"]) . "</td>";
         echo "<td>" . htmlspecialchars($row["dob"]) . "</td>";
         echo "<td>" . htmlspecialchars($row["academic_year"]) . "</td>";
+        
         echo "<td><img src='" . htmlspecialchars($row["image"]) . "' width='60' style='border-radius: 5px;' alt='student image'></td>";
         echo "<td class='action'>
                 <a href='edit_student.php?id=" . $row["id"] . "' class='btn btn-edit'>Edit</a>
@@ -57,7 +58,7 @@ include "footer.php";
         width: 19em;
     }
     .container {
-        width: 90%;
+        width: 70%;
         margin: 30px auto;
         padding: 20px;
         background-color: #fff;
@@ -72,10 +73,10 @@ include "footer.php";
         margin-bottom: 20px;
     }
     table {
-        width: 80%;
+        width: 94%;
         border-collapse: collapse;
         margin-top: 20px;
-        margin-left: 10em;
+        margin-left: 6em;
         font-size: 14px;
     }
     th, td {

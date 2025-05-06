@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student ID Card</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .id-card {
+      width: 100%;
+      max-width: 1050px;
+      height: auto;
+      background: #d4e1f5;
+      border: 2px solid #000;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Watermark image centered and faded */
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.07;
+      width: 80%;
+      height: auto;
+      z-index: 0;
+    }
+
+    /* All main content layers above watermark */
+    .header,
+    .content,
+    .footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .logo-left,
+    .logo-right {
+      width: 80px;
+      height: auto;
+    }
+
+    .school-info {
+      text-align: center;
+      flex: 1;
+    }
+
+    .school-info h4, 
+    .school-info h3 {
+      margin: 2px;
+      font-size: 18px;
+    }
+
+    .school-info h2 {
+      margin-top: 5px;
+      font-size: 24px;
+      color: #b300b3;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .details {
+      font-size: 20px;
+      line-height: 1.6;
+      flex: 2;
+    }
+
+    .photo {
+      flex: 1;
+      text-align: right;
+      padding-left: 20px;
+    }
+
+    .photo img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #000;
+    }
+
+    .footer {
+      background: #ffeb3b;
+      margin-top: 20px;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .footer .issue,
+    .footer .expiry {
+      color: #b300b3;
+    }
+
+    .footer .emergency {
+      color: #000;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .photo {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .photo img {
+        width: 120px;
+      }
+
+      .school-info h4,
+      .school-info h3,
+      .school-info h2 {
+        font-size: 16px;
+      }
+
+      .footer {
+        font-size: 16px;
+      }
+
+      .details {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="id-card">
+    <!-- Watermark Background Image -->
+    <img src="cbgii-tvet.png" alt="Watermark" class="watermark" />
+
+    <!-- Header Section -->
+    <div class="header">
+      <img src="rwanda-logo.png" alt="Rwanda Logo" class="logo-left" />
+      <div class="school-info">
+        <h4>MINISTRY OF EDUCATION<br>WESTERN PROVINCE<br>RUBAVU DISTRICT</h4>
+        <h3>COLLEGE BAPTISTE GACUBA II TVET SCHOOL</h3>
+        <h2>STUDENT ID CARD</h2>
+      </div>
+      <img src="rtb-logo.png" alt="RTB Logo" class="logo-right" />
+    </div>
+
+    <!-- Student Info Section -->
+    <div class="content">
+      <div class="details">
+        <p><strong>Student Name:</strong> AKAZUBA SHEMUSA ALIA</p>
+        <p><strong>Class:</strong> S1 | S2 | S3</p>
+        <p><strong>Sex:</strong> F</p>
+        <p><strong>DOB:</strong> 2013</p>
+        <p><strong>Academic Year:</strong> 2024-2025</p>
+      </div>
+      <div class="photo">
+        <img src="student-photo.jpg" alt="Student Photo" />
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <p class="issue">Date of Issue: <span>01 Nov 2024</span></p>
+      <p class="emergency">Emergency Call: +250781508248</p>
+      <p class="expiry">Date of Expiry: <span>2027</span></p>
+    </div>
+  </div>
+</body>
+</html>
