@@ -79,8 +79,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background-color: #fff;
             padding: 25px;
             margin: auto;
+            margin-top: 2em;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
         }
         h2 {
             color: #007bff;
@@ -109,12 +111,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background-color: #0056b3;
         }
         img {
-            width: 150px;
-            height: 150px;
+            width: 115px;
+            height: 115px;
             object-fit: cover;
             display: block;
             margin: 0 auto 15px;
             border-radius: 5px;
+            margin-top: -1em;
         }
     </style>
 </head>
@@ -142,7 +145,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="academic_year" value="<?= htmlspecialchars($row['academic_year']) ?>" required>
 
         <label>Current Image:</label><br>
-        <img src="<?= htmlspecialchars($row['image']) ?>" alt="Student Image"><br>
+        <img src="<?= htmlspecialchars($row['image']) ?>" alt="Student Image">
 
         <label>Choose New Image:</label>
         <input type="file" name="image" accept="image/*">
