@@ -1,12 +1,13 @@
 <?php
 include "header.php";
 include "connection.php";
-
+echo"<br><br><br><br><br>";
 $sql = "SELECT * FROM users"; 
 $result = $connect->query($sql);
 
 if ($result->num_rows > 0) {
     echo "<div class='container'>";
+    
     echo "<h1> List of users</h1>";
     echo "<table class='table'>";
     echo "<tr>

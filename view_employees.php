@@ -23,14 +23,14 @@ include "connection.php";
     }
 
     table {
-      width: 80%;
+      width: 90%;
       margin: auto;
       border-collapse: collapse;
       background-color: #fff;
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
       border-radius: 8px;
       overflow: hidden;
-      margin-left: 20em;
+      margin-left: 5em;
       margin-top: 4em;
     }
 
@@ -57,7 +57,7 @@ include "connection.php";
   </style>
 </head>
 <body>
-
+<br><br><br><br>
   <h2>Employee Records</h2>
 
   <?php
