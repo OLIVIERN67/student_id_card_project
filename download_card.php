@@ -57,6 +57,7 @@ $result = $connect->query($sql);
 
     tr:nth-child(even) {
       background-color: #f1f1f1;
+      color: #333;
     }
 
     tr:hover {
@@ -194,12 +195,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const card = document.createElement("div");
     card.classList.add("hidden-card");
     card.innerHTML = `
-      <div style="width:345px; height:192px; background:#d4e1f5;  padding:10px; font-family:Georgia; box-sizing:border-box;">
+      <div style="width:345px; height:192px; background:#d4e1f5; color:black; padding:10px; font-family:Georgia; box-sizing:border-box;">
         <div style='display:flex;justify-content:space-between;align-items:center;background:#ffff;padding:5px; margin-top:-1em;
         
         margin-left:-3em;margin-right:-3em;width:40em,'>
           <img src='rwanda-logo.png' style='width:40px;'>
-          <div style='text-align:center; font-size:9px; line-height:1.2;'>
+          <div style='text-align:center; font-size:9px; line-height:1.2; color:black;'>
             <div>MINISTRY OF EDUCATION</div>
             <div>WESTERN PROVINCE</div>
             <div>RUBAVU DISTRICT</div>
