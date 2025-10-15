@@ -24,6 +24,7 @@
             border-top: 4px solid #1d75bd;
             position: relative;
             overflow: hidden;
+            height:14em;
         }
 
         /* Animated background elements */
@@ -137,7 +138,7 @@
         }
 
         .footer-divider {
-            height: 2px;
+            height: 1px;
             background: rgba(255,255,255,0.2);
             margin: 2em 0;
             grid-column: 1 / -1;
@@ -150,6 +151,8 @@
             font-size: clamp(12px, 2vw, 14px);
             opacity: 0.85;
             animation: fadeIn 0.8s ease-out 0.5s both;
+            margin-top:-28em;
+            margin-left: 70em;
         }
 
         .footer-bottom p {
@@ -249,6 +252,7 @@
                 padding: 2em 0.8em;
                 margin-top: 2em;
                 border-top: 3px solid #1d75bd;
+                height: 1px;
             }
 
             .footer-content {
@@ -318,7 +322,7 @@
                     <div class="footer-item">
                         <i class="fas fa-envelope footer-icon"></i>
                         <a href="mailto:cr.aricenttechnologyltd@gmail.com">
-                            cr.aricenttechnologyltd@gmail.com
+                            cr.aricenttechnology2025@gmail.com
                         </a>
                     </div>
                 </div>
@@ -340,6 +344,7 @@
 
             <div class="footer-section">
                 <div class="footer-title">🌐 Connect</div>
+                <div class="footer-title"><a href="" target="blank">🌐 www.crat.rw</a></div>
                 <div class="social-links">
                     <a href="#" class="social-link" title="Facebook">
                         <i class="fab fa-facebook-f"></i>

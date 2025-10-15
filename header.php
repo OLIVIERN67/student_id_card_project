@@ -276,18 +276,6 @@ if (!isset($_SESSION['username'])) {
       align-items: center;
     }
 
-    .welcome-message {
-      font-size: clamp(20px, 5vw, 32px);
-      color: #333;
-      margin-bottom: 2em;
-      text-align: center;
-      font-weight: 600;
-      animation: fadeInUp 0.8s ease-out 0.3s both;
-    }
-
-    body.dark-mode .welcome-message {
-      color: #e0e0e0;
-    }
 
     @keyframes fadeInUp {
       from {
@@ -304,10 +292,13 @@ if (!isset($_SESSION['username'])) {
     .features-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5em;
+      gap: 1.6em;
+      height:4em;
       width: 100%;
       max-width: 1000px;
       padding: 2em;
+      margin-left:auto;
+      margin-right:auto;
     }
 
     .feature-btn {
@@ -641,10 +632,7 @@ if (!isset($_SESSION['username'])) {
   </nav>
 
   <!-- Main Content -->
-  <div class="main-content">
-    <div class="welcome-message">
-      Welcome back, <strong><?php echo htmlspecialchars($_SESSION['username']); ?></strong>! 👋
-    </div>
+
 
     <div class="features-container">
       <a class="feature-btn" href="view_customers.php">

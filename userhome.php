@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit();
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -302,6 +312,25 @@
         .getstarted{
             text-decoration: none;
         }
+
+
+
+
+        
+    .welcome-message {
+      position: relative;
+      right: 450px;
+      top: -15  px;
+      font-size: clamp(40px, 5vw, 32px);
+      color: #333;
+      text-align: center;
+      font-weight: 600;
+      animation: fadeInUp 0.8s ease-out 0.3s both;
+    }
+
+    .welcome-message {
+      color: #ffffffff;
+    }
     </style>
 </head>
 <body>
@@ -320,7 +349,14 @@
 </div>
 
 <div class="header-section">
-    <h1>CRAT System</h1>
+
+
+  <div class="main-content">
+    <div class="welcome-message">
+      Welcome back, <strong><?php echo htmlspecialchars($_SESSION['username']); ?></strong>! 👋
+    </div>
+
+    <h1 style=" margin-top: -70px; margin-left: 20px;" >CRAT System</h1>
     <p class="tagline">Empowering Your Digital Future</p>
     <div class="greeting-box">
         <span id="greeting">Welcome!</span>

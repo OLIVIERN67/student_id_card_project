@@ -8,6 +8,7 @@ $sql= mysqli_query($connect,"SELECT * FROM customers");
 if ($sql ->num_rows>0) {
     // code...
     echo "<div class='container'>";
+    echo"<br><br><br><br><br>";
     echo "<h1>Schools List</h1>";
     echo "<table>";
      echo "<tr>

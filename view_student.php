@@ -76,8 +76,9 @@ $result = $connect->query($sql);
 
         /* Container */
         .container {
-            max-width: 1200px;
+            max-width: 1350px;
             margin: 0 auto;
+            margin-top:-3em;
             background: white;
             border-radius: 15px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -116,10 +117,11 @@ $result = $connect->query($sql);
         .table-wrapper {
             overflow-x: auto;
             padding: 0;
+            width: 100%;
         }
 
         table {
-            width: 100%;
+            width: 90em;
             border-collapse: collapse;
             font-size: clamp(13px, 2.5vw, 15px);
         }
@@ -442,10 +444,11 @@ $result = $connect->query($sql);
 <body>
 
     <div class="page-header">
-        <h1 class="page-title">
+        <!-- <h1 class="page-title">
             <i class="fas fa-graduation-cap"></i>
             Student List
-        </h1>
+        </h1> -->
+        <br><br><br><br><br>
         <p class="subtitle">Manage and view all student records</p>
     </div>
 
