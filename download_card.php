@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const card = document.createElement("div");
     card.classList.add("hidden-card");
     card.innerHTML = `
-      <div style="width:345px; height:192px; background:#d4e1f5; color:black; padding:10px; font-family:Georgia; box-sizing:border-box;">
+      <div style="width:345px; height:192px; color:black; padding:10px; font-family:Georgia; box-sizing:border-box;">
         <div style='display:flex;justify-content:space-between;align-items:center;background:#ffff;padding:5px; margin-top:-1em;
         
         margin-left:-3em;margin-right:-3em;width:40em,'>
