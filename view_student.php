@@ -29,7 +29,7 @@ $result = $connect->query($sql);
         }
 
         body.dark-mode {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #211e1eff 100%);
         }
 
         /* Page Header */
@@ -37,6 +37,7 @@ $result = $connect->query($sql);
             text-align: center;
             margin-bottom: 2.5em;
             animation: slideDown 0.6s ease-out;
+           
         }
 
         .page-title {
@@ -84,6 +85,7 @@ $result = $connect->query($sql);
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             animation: fadeInUp 0.8s ease-out 0.2s both;
+            width: 100%;
         }
 
         body.dark-mode .container {
@@ -124,6 +126,10 @@ $result = $connect->query($sql);
             width: 90em;
             border-collapse: collapse;
             font-size: clamp(13px, 2.5vw, 15px);
+            table-layout: auto;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+            
         }
 
         th {
@@ -482,9 +488,9 @@ $result = $connect->query($sql);
                 echo "<td><img src='" . htmlspecialchars($row["image"]) . "' class='student-image' alt='student image'></td>";
                 echo "<td>";
                 echo "<div class='action-cell'>";
-                echo "<a href='edit_student.php?id=" . $row["id"] . "' class='btn btn-edit'><i class='fas fa-edit'></i> Edit</a>";
-                echo "<a href='delete_student.php?id=" . $row["id"] . "' class='btn btn-delete' onclick=\"return confirm('Are you sure you want to delete this student?');\"><i class='fas fa-trash'></i> Delete</a>";
-                echo "<a href='download_card.php?id=" . $row["id"] . "' class='btn btn-download'><i class='fas fa-download'></i> Download</a>";
+                echo "<a href='edit_student.php?id=" . $row["id"] . "' class='btn btn-edit'><i class='fas fa-edit'></i></a>";
+                echo "<a href='delete_student.php?id=" . $row["id"] . "' class='btn btn-delete' onclick=\"return confirm('Are you sure you want to delete this student?');\"><i class='fas fa-trash'></i> </a>";
+                echo "<a href='download_card.php?id=" . $row["id"] . "' class='btn btn-download'><i class='fas fa-download'></i> </a>";
                 echo "</div>";
                 echo "</td>";
                 echo "</tr>";
